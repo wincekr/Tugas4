@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:xmls="http://schemas.android.com/apk/res-auto"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_height="match_parent"
+android:layout_width="match_parent">
+<EditText
+android:layout_height="match_parent"
+android:layout_width="wrap_content"
+/>
+</LinearLayout>
+
+setContentView(R.layout.activity_main);
+LinearLayout linearlayout_name = (LinearLayout)findViewById(R.id.LinearLayout);
+EditText edittext_name = new EditText(this);
+edittext_name.setHint(“Username”);
+linearLayout.addView(edittext_name);
+
